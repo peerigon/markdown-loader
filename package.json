@@ -1,0 +1,25 @@
+{
+  "name": "markdown-loader",
+  "version": "0.1.0",
+  "description": "markdown-loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerigon/markdown-loader"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "markdown",
+    "html"
+  ],
+  "author": "peerigon <developers@peerigon.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peerigon/markdown-loader/issues"
+  },
+  "homepage": "https://github.com/peerigon/markdown-loader"
+}
