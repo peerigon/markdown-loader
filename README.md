@@ -7,7 +7,7 @@ markdown loader for webpack
 ## Usage 
 
 ```javascript
-var html = require("markdown!./README.md");
+var html = require("html!markdown!./README.md");
 ```
 
 ## Recommended Configuration
