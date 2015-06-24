@@ -3,9 +3,12 @@
  Author peerigon UG @peerigon
  */
 
-var marked = require("marked");
+var marked = require('marked');
+var loaderUtils = require('loader-utils');
+var assign = require("object-assign");
 
-marked.setOptions({
+// default option
+var options = {
     renderer: new marked.Renderer(),
     gfm: true,
     tables: true,
@@ -14,9 +17,12 @@ marked.setOptions({
     sanitize: true,
     smartLists: true,
     smartypants: false
-});
+};
 
 module.exports = function(markdown) {
+    // merge params and default config
+    var config = assign(options, loaderUtils.parseQuery(this.query));
     this.cacheable();
+    marked.setOptions(config);
     return marked(markdown);
 };
