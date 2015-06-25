@@ -23,3 +23,17 @@ Best served with html-loader.
     }
 }
 ```
+
+## Override default markdown primitive options
+
+Simply add query params by javascript or configuration, example:
+
+```javascript
+{
+    module: {
+        loaders: {
+            { test: /\.md$/, loader: "html!markdown?gfm=false" },
+        ]
+    }
+}
+```
