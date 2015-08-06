@@ -1,10 +1,7 @@
-/*
- MIT License http://www.opensource.org/licenses/mit-license.php
- Author peerigon UG @peerigon
- */
+"use strict";
 
-var marked = require('marked');
-var loaderUtils = require('loader-utils');
+var marked = require("marked");
+var loaderUtils = require("loader-utils");
 var assign = require("object-assign");
 
 // default option
@@ -19,7 +16,7 @@ var options = {
     smartypants: false
 };
 
-module.exports = function(markdown) {
+module.exports = function (markdown) {
     // merge params and default config
     var config = assign(options, loaderUtils.parseQuery(this.query));
     this.cacheable();
