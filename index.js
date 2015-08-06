@@ -18,8 +18,17 @@ var options = {
 
 module.exports = function (markdown) {
     // merge params and default config
-    var config = assign(options, loaderUtils.parseQuery(this.query));
+    var query = assign(loaderUtils.parseQuery(this.query), options);
+    var configKey = query.config || "markdownLoader";
+
+    if (this.options[configKey]) {
+        // If present, add custom renderer
+        query.renderer = this.options[configKey].renderer;
+    }
+
     this.cacheable();
-    marked.setOptions(config);
+
+    marked.setOptions(query);
+
     return marked(markdown);
 };
