@@ -18,7 +18,7 @@ var options = {
 
 module.exports = function (markdown) {
     // merge params and default config
-    var query = assign(loaderUtils.parseQuery(this.query), options);
+    var query = assign(options, loaderUtils.parseQuery(this.query));
     var configKey = query.config || "markdownLoader";
 
     if (this.options[configKey]) {
