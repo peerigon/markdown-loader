@@ -19,6 +19,13 @@ var options = {
 module.exports = function (markdown) {
     // merge params and default config
     var query = loaderUtils.parseQuery(this.query);
+
+    var parserKey = query.parser || "markdownParser";
+    var parserInstance = this.options[parserKey];
+    if (parserInstance) {
+      marked = parserInstance;
+    }
+
     var configKey = query.config || "markdownLoader";
     var options = assign({}, options, query, this.options[configKey]);
 
