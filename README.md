@@ -24,7 +24,7 @@ Since marked's output is HTML, it's best served in conjunction with the [html-lo
 ```javascript
 {
     module: {
-        loaders: {
+        loaders: [
             { test: /\.md$/, loader: "html!markdown" },
         ]
     }
