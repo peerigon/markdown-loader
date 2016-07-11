@@ -4,9 +4,21 @@ var marked = require("marked");
 var loaderUtils = require("loader-utils");
 var assign = require("object-assign");
 
+var renderer = new marked.Renderer();
+var headingCounts = {};
+
+renderer.heading = function(text, level) {
+    var encodedText = encodeURIComponent(text);
+    headingCounts[encodedText] = ++headingCounts[encodedText] || 1;
+    if (headingCounts[encodedText] > 1) {
+        encodedText += '-' + headingCounts[encodedText];
+    }
+    return '<h' + level + ' id="' + encodedText + '">' + text + '</h' + level + '>';
+};
+
 // default option
 var options = {
-    renderer: new marked.Renderer(),
+    renderer: renderer,
     gfm: true,
     tables: true,
     breaks: false,
