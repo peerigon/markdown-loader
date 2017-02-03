@@ -39,7 +39,7 @@ Since marked's output is HTML, it's best served in conjunction with the [html-lo
 
 ### Options
 
-Simply pass your marked
+Simply pass your marked [options](https://github.com/chjj/marked#options-1) as shown above.
 In order to specify [custom renderers](https://github.com/peerigon/markdown-loader/issues/5), simply set the `options.renderer`-option on your webpack options.
 
 ```javascript

@@ -1,0 +1,11 @@
+Changelog
+---------
+
+### 2.0.0
+- **Breaking:** Drop Node.js 0.12 support
+- **Breaking:** Drop support for custom config key (webpack 1)
+- Update documentation for webpack 2
+- Add tests
+- Update dependencies
+  - marked@0.3.6
+

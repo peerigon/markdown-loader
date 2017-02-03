@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+var webpack = require("webpack");
 
 // markdown conver to html
 var marked = require("marked");
@@ -10,12 +10,21 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      test: /\.md$/,
-      loader: "html!markdown"
-    }]
-  },
-  markdownLoader: {
-    renderer: renderer
-  }
+        rules: [{
+            test: /\.md$/,
+            use: [
+                {
+                    loader: "html-loader"
+                },
+                {
+                    loader: require.resolve("../index.js"),
+                    options: {
+                        renderer
+                    }
+                }
+            ]
+        }]
+    }
 };
+
+
