@@ -1,11 +1,9 @@
 "use strict";
 
-var marked = require("marked");
-var loaderUtils = require("loader-utils");
-var assign = require("object-assign");
+const marked = require("marked");
+const loaderUtils = require("loader-utils");
 
-// default option
-var options = {
+const DEFAULT_OPTIONS = {
     renderer: new marked.Renderer(),
     gfm: true,
     tables: true,
@@ -18,9 +16,7 @@ var options = {
 
 module.exports = function (markdown) {
     // merge params and default config
-    var query = loaderUtils.parseQuery(this.query);
-    var configKey = query.config || "markdownLoader";
-    var options = assign({}, options, query, this.options[configKey]);
+    const options = Object.assign(DEFAULT_OPTIONS, loaderUtils.parseQuery(this.query));
 
     this.cacheable();
 
