@@ -3,12 +3,14 @@ markdown-loader
 
 markdown-loader for webpack using [marked](https://github.com/chjj/marked).
 
-## Setup
+[![](https://img.shields.io/npm/v/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
+[![](https://img.shields.io/npm/dm/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
+[![Dependency Status](https://david-dm.org/peerigon/markdown-loader.svg)](https://david-dm.org/peerigon/markdown-loader)
+[![Build Status](https://travis-ci.org/peerigon/markdown-loader.svg?branch=master)](https://travis-ci.org/peerigon/markdown-loader)
 
-[![npm status](https://nodei.co/npm/markdown-loader.svg?downloads=true&stars=true)](https://npmjs.org/package/markdown-loader)
+## Installation
 
-[![dependencies](https://david-dm.org/peerigon/batch-replace.svg)](http://david-dm.org/peerigon/markdown-loader)
-[![devDependency Status](https://david-dm.org/peerigon/batch-replace/dev-status.svg)](https://david-dm.org/peerigon/markdown-loader#info=devDependencies)
+`npm install markdown-loader`
 
 ## Usage
 
@@ -71,3 +73,7 @@ return {
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
+
+## Sponsors
+
+[<img src="https://assets.peerigon.com/peerigon/logo/peerigon-logo-flat-spinat.png" width="150" />](https://peerigon.com)
