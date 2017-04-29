@@ -4,7 +4,9 @@
   "description": "markdown-loader for webpack",
   "main": "index.js",
   "scripts": {
-    "test": "ava test/*.test.js"
+    "test": "ava test/*.test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,12 +26,14 @@
   "homepage": "https://github.com/peerigon/markdown-loader",
   "dependencies": {
     "loader-utils": "^0.2.16",
-    "marked": "^0.3.6"
+    "marked": "^0.3.6",
+    "snyk": "^1.25.0"
   },
   "devDependencies": {
     "ava": "^0.18.0",
     "highlight.js": "^9.9.0",
     "html-loader": "^0.4.4",
     "webpack": "^2.2.1"
-  }
+  },
+  "snyk": true
 }
