@@ -5,7 +5,7 @@ const loaderUtils = require("loader-utils");
 
 module.exports = function (markdown) {
     // merge params and default config
-    const options = loaderUtils.parseQuery(this.query);
+    const options = loaderUtils.getOptions(this);
 
     this.cacheable();
 
