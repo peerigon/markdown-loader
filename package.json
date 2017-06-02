@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/peerigon/markdown-loader",
   "dependencies": {
-    "loader-utils": "^0.2.16",
+    "loader-utils": "^1.1.0",
     "marked": "^0.3.6"
   },
   "devDependencies": {
