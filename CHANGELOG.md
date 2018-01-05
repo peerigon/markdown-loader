@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+### 2.0.2
+- Update dependencies
+  - marked@0.3.9 (@xuopled)
+
 ### 2.0.1
 - Update dependencies
   - loader-utils@1.1.0 (@kommander)
@@ -12,4 +16,3 @@ Changelog
 - Add tests
 - Update dependencies
   - marked@0.3.6
-

@@ -1,6 +1,6 @@
 {
     "name": "markdown-loader",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "markdown-loader for webpack",
     "main": "index.js",
     "scripts": {
@@ -24,7 +24,7 @@
     "homepage": "https://github.com/peerigon/markdown-loader",
     "dependencies": {
         "loader-utils": "^1.1.0",
-        "marked": "^0.3.6"
+        "marked": "^0.3.9"
     },
     "devDependencies": {
         "ava": "^0.18.0",
