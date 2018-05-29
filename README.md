@@ -12,11 +12,13 @@ markdown-loader for webpack using [marked](https://github.com/chjj/marked).
 
 `npm install markdown-loader`
 
+## [Changelog](CHANGELOG.md) 
+
 ## Usage
 
 Since marked's output is HTML, it's best served in conjunction with the [html-loader](https://github.com/webpack/html-loader).
 
-### Webpack 2
+### Webpack 2+
 
 ```javascript
 {
@@ -41,8 +43,8 @@ Since marked's output is HTML, it's best served in conjunction with the [html-lo
 
 ### Options
 
-Simply pass your marked [options](https://marked.js.org/#/USING_ADVANCED.md#options) as shown above.
-In order to specify [custom renderers](https://github.com/peerigon/markdown-loader/issues/5), simply set the `options.renderer`-option on your webpack options.
+Pass your marked [options](https://marked.js.org/#/USING_ADVANCED.md#options) as shown above.
+In order to specify [custom renderers](https://github.com/peerigon/markdown-loader/issues/5), set the `options.renderer`-option in your webpack config.
 
 ```javascript
 // webpack.config.js

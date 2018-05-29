@@ -1,6 +1,12 @@
 Changelog
 ---------
 
+### 3.0.0
+- Update dependencies 
+  - **Breaking** marked@4.0.0 (@hpohlmeyer) [Changelog](https://github.com/markedjs/marked/releases/tag/0.4.0)
+  - use webpack 4.x for tests 
+  - update example to use npm version of `markdown-loader`
+
 ### 2.0.2
 - Update dependencies
   - marked@0.3.9 (@xuopled)
