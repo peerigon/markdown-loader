@@ -10,6 +10,7 @@ import markdownOptions from "./markdown-options";
 test.cb(t => {
     webpack({
         entry: path.resolve(__dirname, "./assets/markdown.md"),
+        mode: "development",
         module: {
             rules: [{
                 test: /\.md$/,

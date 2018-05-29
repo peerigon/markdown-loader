@@ -1,35 +1,35 @@
 {
-    "name": "markdown-loader",
-    "version": "2.0.2",
-    "description": "markdown-loader for webpack",
-    "main": "index.js",
-    "scripts": {
-        "test": "ava test/*.test.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/peerigon/markdown-loader"
-    },
-    "keywords": [
-        "webpack",
-        "plugin",
-        "markdown",
-        "html"
-    ],
-    "author": "peerigon <developers@peerigon.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/peerigon/markdown-loader/issues"
-    },
-    "homepage": "https://github.com/peerigon/markdown-loader",
-    "dependencies": {
-        "loader-utils": "^1.1.0",
-        "marked": "^0.4.0"
-    },
-    "devDependencies": {
-        "ava": "^0.18.0",
-        "highlight.js": "^9.9.0",
-        "html-loader": "^0.4.4",
-        "webpack": "^2.2.1"
-    }
+  "name": "markdown-loader",
+  "version": "2.0.2",
+  "description": "markdown-loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerigon/markdown-loader"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "markdown",
+    "html"
+  ],
+  "author": "peerigon <developers@peerigon.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peerigon/markdown-loader/issues"
+  },
+  "homepage": "https://github.com/peerigon/markdown-loader",
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "marked": "^0.4.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "highlight.js": "^9.9.0",
+    "html-loader": "^0.5.5",
+    "webpack": "^4.10.0"
+  }
 }
