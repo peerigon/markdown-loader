@@ -2,9 +2,11 @@ os:
   - linux
 language: node_js
 node_js:
-  - "4"
-  - "5"
-  - "7"
+
+  - "6"
+  - "8"
+  - "9"
+  - "10"
 
 script:
   - npm test
