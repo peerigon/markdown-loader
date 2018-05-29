@@ -5,5 +5,5 @@
 * second
   * `npm start`
 * third
-  * open chrome with url `localhost:4000`
+  * open `localhost:4000`
 

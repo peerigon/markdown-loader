@@ -10,10 +10,13 @@
   "author": "qiuyuntao",
   "license": "ISC",
   "dependencies": {
-    "html-loader": "^0.4.4",
-    "markdown-loader": "^0.2.0",
-    "marked": "^0.3.6",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^2.0.2",
+    "marked": "^0.4.0",
+    "webpack": "^4.10.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.4"
   }
 }

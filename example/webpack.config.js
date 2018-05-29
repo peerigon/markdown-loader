@@ -5,9 +5,10 @@ var marked = require("marked");
 var renderer = new marked.Renderer();
 
 module.exports = {
-  entry: './index.js',
+  entry: "./index.js",
+  mode: "development",
   output: {
-    filename: 'bundle.js'
+    filename: "bundle.js"
   },
   module: {
         rules: [{
@@ -17,7 +18,8 @@ module.exports = {
                     loader: "html-loader"
                 },
                 {
-                    loader: require.resolve("../index.js"),
+                    loader: "markdown-loader",
+                    //those options are optional
                     options: {
                         renderer
                     }
