@@ -4,6 +4,7 @@ markdown-loader
 markdown-loader for webpack using [marked](https://github.com/chjj/marked).
 
 [![](https://img.shields.io/npm/v/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
+[![install size](https://badgen.net/packagephobia/install/markdown-loader)](https://packagephobia.now.sh/result?p=markdown-loader)
 [![](https://img.shields.io/npm/dm/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
 [![Dependency Status](https://david-dm.org/peerigon/markdown-loader.svg)](https://david-dm.org/peerigon/markdown-loader)
 [![Build Status](https://travis-ci.org/peerigon/markdown-loader.svg?branch=master)](https://travis-ci.org/peerigon/markdown-loader)
