@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+### 4.0.0 
+
+- Update dependencies 
+  - **Breaking** marked@0.5.0 @robcresswell [Changelog](https://github.com/markedjs/marked/releases/tag/v0.5.0)
+
 ### 3.0.0
 - Update dependencies 
   - **Breaking** marked@4.0.0 (@hpohlmeyer) [Changelog](https://github.com/markedjs/marked/releases/tag/0.4.0)
