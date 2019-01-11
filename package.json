@@ -1,6 +1,6 @@
 {
   "name": "markdown-loader",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "markdown-loader for webpack",
   "main": "index.js",
   "files": [
