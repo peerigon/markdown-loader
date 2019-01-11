@@ -1,7 +1,7 @@
 markdown-loader
 ===============
 
-markdown-loader for webpack using [marked](https://github.com/chjj/marked).
+markdown-loader for webpack using [marked](https://github.com/markedjs/marked).
 
 [![](https://img.shields.io/npm/v/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
 [![install size](https://badgen.net/packagephobia/install/markdown-loader)](https://packagephobia.now.sh/result?p=markdown-loader)
