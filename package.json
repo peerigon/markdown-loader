@@ -3,6 +3,9 @@
   "version": "4.0.0",
   "description": "markdown-loader for webpack",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "ava test/*.test.js"
   },
