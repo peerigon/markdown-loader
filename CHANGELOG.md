@@ -1,6 +1,14 @@
 Changelog
 ---------
 
+### 5.0.0
+
+- Update dependencies 
+  - **Breaking** marked@0.6.0 @tmorehouse [Changelog](https://github.com/markedjs/marked/releases/tag/v0.6.0)
+- switch to snapshot tests @meaku
+- reduce shipped files via npm @styfle 
+- fix URL to marked repo @styfle 
+  
 ### 4.0.0 
 
 - Update dependencies 
