@@ -5,18 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --port 4000"
+    "start": "webpack-dev-server"
   },
   "author": "qiuyuntao",
   "license": "ISC",
   "dependencies": {
     "html-loader": "^0.5.5",
-    "markdown-loader": "^2.0.2",
-    "marked": "^0.4.0",
-    "webpack": "^4.10.0",
-    "webpack-dev-server": "^3.1.4"
+    "markdown-loader": "^4.0.0",
+    "webpack": "^4.28.4",
+    "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
-    "webpack-cli": "^2.1.4"
+    "webpack-cli": "^3.2.1"
   }
 }

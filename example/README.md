@@ -1,9 +1,6 @@
 # Markdown-loader-example
 
-* first
-  * `npm install`
-* second
-  * `npm start`
-* third
-  * open `localhost:4000`
+* `npm install`
+* `npm start`
+* open `localhost:8080`
 
