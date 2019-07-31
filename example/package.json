@@ -11,11 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "html-loader": "^0.5.5",
-    "markdown-loader": "^4.0.0",
-    "webpack": "^4.28.4",
-    "webpack-dev-server": "^3.1.14"
+    "markdown-loader": "^5.1.0",
+    "webpack": "^4.38.0",
+    "webpack-dev-server": "^3.7.2"
   },
   "devDependencies": {
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.3.6"
   }
 }
