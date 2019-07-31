@@ -30,9 +30,9 @@
     "marked": "^0.7.0"
   },
   "devDependencies": {
-    "ava": "^1.0.1",
-    "highlight.js": "^9.13.1",
+    "ava": "^2.2.0",
+    "highlight.js": "^9.15.9",
     "html-loader": "^0.5.5",
-    "webpack": "^4.28.4"
+    "webpack": "^4.38.0"
   }
 }
