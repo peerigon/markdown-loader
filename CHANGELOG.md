@@ -1,23 +1,31 @@
 Changelog
 ---------
 
+### 5.2.0
+
+- Update dependencies
+-
+### 5.1.0
+
+- Update dependencies
+
 ### 5.0.0
 
-- Update dependencies 
+- Update dependencies
   - **Breaking** marked@0.6.0 @tmorehouse [Changelog](https://github.com/markedjs/marked/releases/tag/v0.6.0)
 - switch to snapshot tests @meaku
-- reduce shipped files via npm @styfle 
-- fix URL to marked repo @styfle 
-  
-### 4.0.0 
+- reduce shipped files via npm @styfle
+- fix URL to marked repo @styfle
 
-- Update dependencies 
+### 4.0.0
+
+- Update dependencies
   - **Breaking** marked@0.5.0 @robcresswell [Changelog](https://github.com/markedjs/marked/releases/tag/v0.5.0)
 
 ### 3.0.0
-- Update dependencies 
+- Update dependencies
   - **Breaking** marked@4.0.0 (@hpohlmeyer) [Changelog](https://github.com/markedjs/marked/releases/tag/0.4.0)
-  - use webpack 4.x for tests 
+  - use webpack 4.x for tests
   - update example to use npm version of `markdown-loader`
 
 ### 2.0.2
