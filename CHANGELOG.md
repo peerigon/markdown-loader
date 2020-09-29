@@ -1,10 +1,15 @@
 Changelog
 ---------
 
+### 6.0.0
+
+- Remove Node v6 support
+
 ### 5.2.0
 
 - Update dependencies
--
+- Note: This version is deprecated since it already removed official Node v6 support which should have been published as breaking change
+
 ### 5.1.0
 
 - Update dependencies
