@@ -11,5 +11,5 @@ module.exports = function (markdown) {
 
     marked.setOptions(options);
 
-    return marked(markdown);
+    return (typeof options.callback === 'function') ? marked(markdown, options.callback) : marked(markdown);
 };
