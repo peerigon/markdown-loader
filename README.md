@@ -53,7 +53,7 @@ In order to specify [custom renderers](https://github.com/peerigon/markdown-load
 const marked = require("marked");
 const renderer = new marked.Renderer();
 
-return {
+module.exports = {
     module: {
         rules: [{
                 test: /\.md$/,
