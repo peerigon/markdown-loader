@@ -4,7 +4,7 @@
 
 ## heading 2
 
-_italic_ is the new __bold__
+_italic_ is the new **bold**
 
 | name | type |
-| --- | --- |
+| ---- | ---- |

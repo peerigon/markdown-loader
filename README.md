@@ -1,5 +1,4 @@
-markdown-loader
-===============
+# markdown-loader
 
 markdown-loader for webpack using [marked](https://github.com/markedjs/marked).
 
@@ -13,7 +12,7 @@ markdown-loader for webpack using [marked](https://github.com/markedjs/marked).
 
 `npm install markdown-loader`
 
-## [Changelog](CHANGELOG.md) 
+## [Changelog](CHANGELOG.md)
 
 ## Usage
 
@@ -23,22 +22,24 @@ Since marked's output is HTML, it's best served in conjunction with the [html-lo
 
 ```javascript
 {
-    module: {
-        rules: [{
-                test: /\.md$/,
-                use: [
-                    {
-                        loader: "html-loader"
-                    },
-                    {
-                        loader: "markdown-loader",
-                        options: {
-                            /* your options here */
-                        }
-                    }
-                ]
-            }]
-    }
+  module: {
+    rules: [
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader",
+          },
+          {
+            loader: "markdown-loader",
+            options: {
+              /* your options here */
+            },
+          },
+        ],
+      },
+    ];
+  }
 }
 ```
 
@@ -54,25 +55,28 @@ const marked = require("marked");
 const renderer = new marked.Renderer();
 
 module.exports = {
-    module: {
-        rules: [{
-                test: /\.md$/,
-                use: [
-                    {
-                        loader: "html-loader"
-                    },
-                    {
-                        loader: "markdown-loader",
-                        options: {
-                            pedantic: true,
-                            renderer
-                        }
-                    }
-                ]
-            }]
-    }
-}
+  module: {
+    rules: [
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader",
+          },
+          {
+            loader: "markdown-loader",
+            options: {
+              pedantic: true,
+              renderer,
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
 ```
+
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)

@@ -4,12 +4,12 @@
 
 ## heading 2
 
-_italic_ is the new __bold__
+_italic_ is the new **bold**
 
 ```javascript
 const i = 100;
 ```
 
-| name | type |
-| --- | --- |
-| key | `string\|number` |
+| name | type             |
+| ---- | ---------------- |
+| key  | `string\|number` |

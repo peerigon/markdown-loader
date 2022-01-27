@@ -1,10 +1,17 @@
 {
   "extends": [
-      // Base rules for every project
-      "peerigon",
-      "peerigon/node",
-      "prettier" // add this at the end of 'extends' if you're using Prettier
+    // Base rules for every project
+    "peerigon",
+    "peerigon/node",
+    "prettier" // add this at the end of 'extends' if you're using Prettier
   ],
   // Do not search for further eslint configs in upper directories
-  "root": true
+  "root": true,
+  "rules": {
+    // Temporarily disabling the following rules since they seem to have problems with ESMs
+    "import/no-unresolved": "off",
+    "node/no-missing-import": "off",
+    // According to Node's documentation, import() is supported in Node 12.22.9
+    "node/no-unsupported-features/es-syntax": "off"
+  }
 }
