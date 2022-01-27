@@ -1,0 +1,59 @@
+name: 🧪 Test and 🚀 Release
+
+on:
+  push:
+    branches:
+      - main
+      - beta
+  pull_request: {}
+
+jobs:
+  test-and-release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@a40b8845c0683271d9f53dfcb887a7e181d3918b # pin@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # pin@v2
+      - name: ⎔ Setup node ${{ matrix.node-version }}
+        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # pin@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: "https://npm.pkg.github.com"
+          cache: "npm"
+      - name: 🗄 Cache node_modules
+        id: cache-node_modules
+        uses: actions/cache@937d24475381cd9c75ae6db12cb4e79714b926ed # pin@v2
+        with:
+          path: "**/node_modules"
+          key: node_modules-${{ runner.os }}-node-${{ matrix.node-version }}-${{
+            hashFiles('**/package-lock.json') }}
+      - name: 🗄 Cache .eslintcache
+        uses: actions/cache@937d24475381cd9c75ae6db12cb4e79714b926ed # pin@v2
+        with:
+          path: .eslintcache
+          key: eslintcache-${{ runner.os }}-node-${{ matrix.node-version }}-${{
+            hashFiles('**/package-lock.json') }}
+      - name: 📥 Install dependencies
+        if: steps.cache-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --ignore-scripts
+      - name: 🧪 Test
+        run: |
+          npm test
+        env:
+          CI: true
+      - name: 🚀 Release on GitHub
+        if: "contains(' refs/heads/main refs/heads/beta ', github.ref) &&
+          matrix.node-version == '16.x'"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm run release
