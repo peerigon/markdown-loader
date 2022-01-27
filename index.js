@@ -1,6 +1,6 @@
 "use strict";
 
-const marked = require("marked");
+const {marked} = require("marked");
 const loaderUtils = require("loader-utils");
 
 module.exports = function (markdown) {
