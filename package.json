@@ -1,8 +1,8 @@
 {
   "name": "markdown-loader",
-  "version": "7.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "markdown-loader for webpack",
-  "main": "src/main.cjs",
+  "main": "./src/main.cjs",
   "type": "module",
   "files": [
     "src"
@@ -12,7 +12,7 @@
     "test:suite": "ava",
     "test:lint": "eslint --max-warnings 0 --cache --ext js,jsx,cjs,mjs,ts,tsx --ignore-path .gitignore .",
     "prepare": "husky install",
-    "release": "echo 'Dummy release script'"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,8 @@
     "webpack": "^5.0.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "ava": "^4.0.1",
     "eslint": "^8.7.0",
     "eslint-config-peerigon": "^33.2.4",
