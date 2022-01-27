@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+### 7.0.0
+
+- **Breaking:** Update marked@4.0.12 to fix security issues ([#82](https://github.com/peerigon/markdown-loader/issues/82))
+
 ### 6.0.0
 
 - Remove Node v6 support
