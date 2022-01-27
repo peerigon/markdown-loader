@@ -4,6 +4,7 @@ import { createRequire } from "module";
 import test from "ava";
 import webpack from "webpack";
 import { Renderer } from "marked";
+import highlighter from "highlight.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
@@ -104,4 +105,16 @@ test("with custom renderer", async (t) => {
     });
 
     t.assert(code.includes("CUSTOM RENDERER") === false);
+});
+
+test("with custom highlighter", async (t) => {
+    const code = await createBundle({
+        fixture: "with-code.md",
+        output: "with-custom-highlighter.cjs",
+        options: {
+            highlight: code => highlighter.highlightAuto(code).value,
+        }
+    });
+
+    t.snapshot(code);
 });
