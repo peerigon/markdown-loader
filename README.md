@@ -1,60 +1,28 @@
 # markdown-loader
 
-markdown-loader for webpack using [marked](https://github.com/markedjs/marked).
+**markdown-loader for webpack using [marked](https://github.com/markedjs/marked).**
 
-[![](https://img.shields.io/npm/v/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
-[![install size](https://badgen.net/packagephobia/install/markdown-loader)](https://packagephobia.now.sh/result?p=markdown-loader)
-[![](https://img.shields.io/npm/dm/markdown-loader.svg)](https://www.npmjs.com/package/markdown-loader)
-[![Dependency Status](https://david-dm.org/peerigon/markdown-loader.svg)](https://david-dm.org/peerigon/markdown-loader)
-[![Build Status](https://travis-ci.org/peerigon/markdown-loader.svg?branch=master)](https://travis-ci.org/peerigon/markdown-loader)
+[![Version on NPM](https://img.shields.io/npm/v/markdown-loader?style=for-the-badge)](https://www.npmjs.com/package/markdown-loader)
+[![Semantically released](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge)](https://github.com/semantic-release/semantic-release)
+[![Monthly downloads on NPM](https://img.shields.io/npm/dm/markdown-loader?style=for-the-badge)](https://www.npmjs.com/package/markdown-loader)<br>
+[![License](https://img.shields.io/npm/l/markdown-loader?style=for-the-badge)](./LICENSE)
 
 ## Installation
 
 `npm install markdown-loader`
 
-## [Changelog](CHANGELOG.md)
+Minimal requirements:
+
+- Node >=12.22.9
+- webpack >=5.0.0
 
 ## Usage
 
 Since marked's output is HTML, it's best served in conjunction with the [html-loader](https://github.com/webpack/html-loader).
 
-### Webpack 2+
-
-```javascript
-{
-  module: {
-    rules: [
-      {
-        test: /\.md$/,
-        use: [
-          {
-            loader: "html-loader",
-          },
-          {
-            loader: "markdown-loader",
-            options: {
-              /* your options here */
-            },
-          },
-        ],
-      },
-    ];
-  }
-}
-```
-
-### Options
-
-Pass your marked [options](https://marked.js.org/#/USING_ADVANCED.md#options) as shown above.
-In order to specify [custom renderers](https://github.com/peerigon/markdown-loader/issues/5), set the `options.renderer`-option in your webpack config.
-
 ```javascript
 // webpack.config.js
-
-const marked = require("marked");
-const renderer = new marked.Renderer();
-
-module.exports = {
+export default {
   module: {
     rules: [
       {
@@ -66,8 +34,8 @@ module.exports = {
           {
             loader: "markdown-loader",
             options: {
-              pedantic: true,
-              renderer,
+              // Pass options to marked
+              // See https://marked.js.org/using_advanced#options
             },
           },
         ],
