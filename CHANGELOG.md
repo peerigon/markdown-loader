@@ -1,3 +1,13 @@
+# [8.0.0](https://github.com/peerigon/markdown-loader/compare/v7.0.0...v8.0.0) (2022-01-27)
+
+
+* Introduce semantic-release ([65e2368](https://github.com/peerigon/markdown-loader/commit/65e23682f295296ec918e24fa25fccbdd9e8957a))
+
+
+### BREAKING CHANGES
+
+* Every call to marked is isolated now. This makes sure that options from the first call won't influence options from the second call. If you've configured the markdown-loader with two different options, you might observe different behavior now. We also removed Node v8 and Node v10 support and support for older webpack versions. Webpack 5 is required now.
+
 ## Changelog
 
 ### 7.0.0
