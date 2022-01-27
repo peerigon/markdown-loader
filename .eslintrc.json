@@ -1,0 +1,10 @@
+{
+  "extends": [
+      // Base rules for every project
+      "peerigon",
+      "peerigon/node",
+      "prettier" // add this at the end of 'extends' if you're using Prettier
+  ],
+  // Do not search for further eslint configs in upper directories
+  "root": true
+}

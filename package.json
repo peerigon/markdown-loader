@@ -8,7 +8,9 @@
     "src"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "run-p test:*",
+    "test:suite": "ava",
+    "test:lint": "eslint --max-warnings 0 --cache --ext js,ts --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -26,13 +28,20 @@
     "url": "https://github.com/peerigon/markdown-loader/issues"
   },
   "homepage": "https://github.com/peerigon/markdown-loader",
+  "engines": {
+    "node": ">=12.22.9"
+  },
   "dependencies": {
     "marked": "^4.0.12"
   },
   "devDependencies": {
     "ava": "^4.0.1",
+    "eslint": "^8.7.0",
+    "eslint-config-peerigon": "^33.2.4",
+    "eslint-plugin-node": "^11.1.0",
     "highlight.js": "^11.4.0",
     "html-loader": "^3.1.0",
+    "npm-run-all": "^4.1.5",
     "webpack": "^5.67.0"
   }
 }
