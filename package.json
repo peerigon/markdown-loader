@@ -34,6 +34,9 @@
   "dependencies": {
     "marked": "^4.0.12"
   },
+  "peerDependencies": {
+    "webpack": "^5.0.0"
+  },
   "devDependencies": {
     "ava": "^4.0.1",
     "eslint": "^8.7.0",
