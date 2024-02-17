@@ -9,7 +9,7 @@
 
 ## Installation
 
-`npm install markdown-loader`
+`npm install --save-dev markdown-loader`
 
 Minimal requirements:
 
